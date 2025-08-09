@@ -14,7 +14,7 @@ pipeline {
             steps{
                 script{
                     echo 'Cloning from Github...'
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token-anime', url: 'https://github.com/preetham-aiml/MLOPS-COURSE-PROJECT-2.git']])
+                   checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token-anime', url: 'https://github.com/preetham-aiml/MLOPS-COURSE-PROJECT-2.git']])
                 }
             }
         }
@@ -37,7 +37,7 @@ pipeline {
 
         stage('DVC Pull'){
             steps{
-                withCredentials([file(credentialsId:'gcp-key' , variable: 'GOOGLE_APPLICATION_CREDENTIALS' )]){
+                withCredentials([file(credentialsId:'gcp-key-2' , variable: 'GOOGLE_APPLICATION_CREDENTIALS' )]){
                     script{
                         echo 'DVC Pul....'
                         sh '''
