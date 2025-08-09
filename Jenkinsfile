@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     // environment {
-    //     VENV_DIR = 'venv'
+           VENV_DIR = 'venv'
     //     GCP_PROJECT = 'vast-collective-467816-u5'
     //     GCLOUD_PATH = "/var/jenkins_home/google-cloud-sdk/bin"
     //     KUBECTL_AUTH_PLUGIN = "/usr/lib/google-cloud-sdk/bin"
