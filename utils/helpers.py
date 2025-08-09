@@ -190,15 +190,3 @@ def get_user_recommendations(similar_users , user_pref ,path_anime_df , path_syn
                     })
     return pd.DataFrame(recommended_animes).head(n)
             
-
-
-
-    
-
-
-
-
-        
-        
-
-        

@@ -33,5 +33,5 @@ def hybrid_recommendation(user_id , user_weight=0.5, content_weight =0.5):
 
     sorted_animes = sorted(combined_scores.items() , key=lambda x:x[1] , reverse=True)
 
-    return [anime for anime , score in sorted_animes[:10]] 
+    return [anime for anime , score in sorted_animes[:10]]
 
