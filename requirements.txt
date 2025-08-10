@@ -9,5 +9,5 @@ dvc
 dvc-gs
 flask
 joblib
-matplotlib.pyplot
+matplotlib
 wordcloud
