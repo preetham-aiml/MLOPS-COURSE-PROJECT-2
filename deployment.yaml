@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ml-app-container
-        image: gcr.io/mlops-new-447207/ml-project:latest
+        image: gcr.io/vast-collective-467816-u5/ml-anime-project:latest
         ports:
         - containerPort: 5000  # Replace with the port your app listens on
 ---
